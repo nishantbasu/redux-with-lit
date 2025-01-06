@@ -6,7 +6,6 @@ const updateExampleState = (state: any, action: PayloadAction<any>) => {
   if (action.payload != undefined) {
     if (newState[action.payload.fieldName]?.value != undefined) {
       newState[action.payload.fieldName].value = action.payload.fieldValue;
-      newState[action.payload.fieldName].isValid = action.payload.isValid;
     } else {
       newState[action.payload.fieldName] = action.payload.fieldValue;
     }
