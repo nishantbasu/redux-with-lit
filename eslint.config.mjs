@@ -22,6 +22,7 @@ export default [
     rules: {
       ...tseslint.configs.recommended.rules,
       ...eslintPluginLit.configs.recommended.rules,
+      "@typescript-eslint/no-explicit-any": "off", 
     },
   },
   {
@@ -30,7 +31,7 @@ export default [
       "dist/**",
       ".git/**",
       "demo/**",
-      "src/**/*.spec.ts"
+      "src/**/*.spec.ts",
     ],
   },
   prettierConfig,
